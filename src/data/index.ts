@@ -7,5 +7,5 @@ export function seed(): void {
   const stages = seedStages()
   const roles = seedRoles()
   const candidates = seedCandidates(roles, stages)
-  const scoreCards = seedScoreCards(candidates)
+  seedScoreCards(candidates)
 }

@@ -13,7 +13,6 @@ import { ref, watchEffect } from 'vue';
 const isOpen = defineModel<boolean>('open', { required: true });
 const dialog = ref<HTMLDialogElement>();
 
-const open = () => isOpen.value = true;
 const close = () => isOpen.value = false;
 
 watchEffect(() => {
